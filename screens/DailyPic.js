@@ -56,9 +56,7 @@ export default class DailyPicScreen extends Component {
     <TouchableOpacity
       style={styles.listContainer}
       onPress={() =>
-        Linking.openURL(this.state.apod.url).catch((err) =>
-          console.error("Couldn't load page", err)
-        )
+        Linking.openURL(this.state.apod.url)
       }>
       <View style={styles.iconContainer}>
         <Image
